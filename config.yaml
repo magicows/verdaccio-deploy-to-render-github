@@ -37,6 +37,9 @@ web:
 
 auth:
   azure-ad-login:
+    tenant: AZURE_TENANT
+    client_id: AZURE_ID
+    client_secret: AZURE_SECRET
     organization_domain: AZURE_ORG_DOMAIN
   github-oauth-ui:
     client-id: GITHUB_CLIENT_ID
