@@ -36,6 +36,8 @@ web:
 #   web: en-US
 
 auth:
+  azure-ad-login:
+    organization_domain: AZURE_ORG_DOMAIN
   github-oauth-ui:
     client-id: GITHUB_CLIENT_ID
     client-secret: GITHUB_CLIENT_SECRET
@@ -59,6 +61,7 @@ packages:
     # you can specify usernames/groupnames (depending on your auth plugin)
     # and three keywords: "$all", "$anonymous", "$authenticated"
     access: $authenticated
+    publish: azuread
 
     # allow all known users to publish/publish packages
     # (anyone can register by default, remember?)
