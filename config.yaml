@@ -41,11 +41,11 @@ auth:
     client_id: AZURE_ID
     client_secret: AZURE_SECRET
     organization_domain: AZURE_ORG_DOMAIN
-  github-oauth-ui:
-    client-id: GITHUB_CLIENT_ID
-    client-secret: GITHUB_CLIENT_SECRET
-    org: GITHUB_ORG
-    token: GITHUB_PAT
+#   github-oauth-ui:
+#     client-id: GITHUB_CLIENT_ID
+#     client-secret: GITHUB_CLIENT_SECRET
+#     org: GITHUB_ORG
+#     token: GITHUB_PAT
 
 # a list of other known repositories we can talk to
 uplinks:
@@ -80,8 +80,8 @@ server:
   keepAliveTimeout: 60
 
 middlewares:
-  github-oauth-ui:
-    enabled: true
+#   github-oauth-ui:
+#     enabled: true
 
 # log settings
 logs: { type: stdout, format: pretty, level: http }
